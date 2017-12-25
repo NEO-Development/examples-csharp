@@ -4,11 +4,11 @@ namespace Neo.SmartContract
 {
     public class Lock : Framework.SmartContract
     {
-        public static bool Main(uint timestamp, byte[] pubkey, byte[] signature)
+        public static bool Main(uint timestamp)
         {
             Header header = Blockchain.GetHeader(Blockchain.GetHeight());
             if (timestamp > header.Timestamp) return false;
-            return VerifySignature(signature, pubkey);
+            return true; //VerifySignature(signature, pubkey);
         }
     }
 }
