@@ -1,8 +1,10 @@
 ﻿using Neo.SmartContract.Framework;
 using Neo.SmartContract.Framework.Services.Neo;
+using System;
 
 namespace OperationsContract
 {
+
     public class OperationsContract : SmartContract
     {
         public static class OperationTypes
@@ -12,8 +14,11 @@ namespace OperationsContract
             public static string Read = nameof(Read);
         }
 
+        
         public static void Main(string operation, string key, string value)
         {
+            value = "123"; // 123.ToString();
+            
             Runtime.Log("Operataion : " + operation);
 
             if (operation == "Add")
