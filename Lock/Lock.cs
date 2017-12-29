@@ -1,4 +1,6 @@
-﻿using Neo.SmartContract.Framework.Services.Neo;
+﻿using Neo.SmartContract.Framework;
+using Neo.SmartContract.Framework.Services.Neo;
+using System.Numerics;
 
 namespace Neo.SmartContract
 {
@@ -14,10 +16,10 @@ namespace Neo.SmartContract
             //string currnt = header.Timestamp.ToString();
 
             int a = (int)header.Timestamp;
-            //string currnt = a.ToString();
+            byte[] currnt = ((BigInteger)a).AsByteArray();
 
             Runtime.Log("Current : ");
-            //Runtime.Log(header.Timestamp.ToString());
+            Runtime.Log(currnt.AsString());
             Runtime.Log("Limit time : ");
             Runtime.Log("1514383200");
 

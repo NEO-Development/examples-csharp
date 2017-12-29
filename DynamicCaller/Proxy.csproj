@@ -8,8 +8,8 @@
     <ProjectGuid>{724758BB-F156-4AD4-AC61-273A051B36A8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DynamicCaller</RootNamespace>
-    <AssemblyName>DynamicCaller</AssemblyName>
+    <RootNamespace>ProxyContract</RootNamespace>
+    <AssemblyName>ProxyContract</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DynamicContract.cs" />
+    <Compile Include="ProxyContract.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
