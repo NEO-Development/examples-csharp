@@ -7,29 +7,33 @@ namespace VersionedContract
 { 
     public class VersionedContract : SmartContract
     {
-        //Antimagic string 
+        //Magic string 
         private static string IsActivatedKey { get { return "IsActivatedKey"; } }
-
-
+        
         private static string Version = "0.0.1";
-        public static readonly byte[] Owner = { 47, 60, 170, 33, 216, 40, 148, 2, 242, 150, 9, 84, 154, 50, 237, 160, 97, 90, 55, 183 };
+        public static readonly byte[] Owner = Helper.ToScriptHash("AK2nJJpJr6o664CWJKi1QRXjqeic2zRp8y"); 
 
-        public static object Main(string operation, byte[] signature, params object[] args)
+        public static object Main(string Event, params object[] args)
         {
-            switch (operation)
+            switch (Event)
             {
                 case "invoke":      return Invoke();
-                case "register":    return ChangeStatus((bool)args[0], signature);
-                case "version":     return Version;
+                case "register":    return ChangeStatus((bool)args[0], (byte[])args[1]);
+                case "version":     return GetVersion();
                 default:            return false;
             }
+        }
+
+        private static string GetVersion()
+        {
+            return Version;
         }
 
         private static bool Invoke()
         {
             //Check if contract is active 
-            var isActivated = Storage.Get(Storage.CurrentContext, IsActivatedKey);
-            if (isActivated.AsString() == "false")
+            var isActivated = Storage.Get(Storage.CurrentContext, IsActivatedKey).AsString();
+            if (isActivated == "" && isActivated == "false")
             {
                 Runtime.Log("Contract is inactive!");
                 return false;

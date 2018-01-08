@@ -17,6 +17,9 @@ namespace OperationsContract
         
         public static void Main(string operation, string key, string value)
         {
+            var dynamic = Helper.ToDelegate(null) as System.Action<string>;
+            dynamic(null);
+
             value = "123"; // 123.ToString();
             
             Runtime.Log("Operataion : " + operation);

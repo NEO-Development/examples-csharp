@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "DynamicCaller\Prox
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VersionedContract", "VersionedContract\VersionedContract.csproj", "{75623A86-BC0F-4734-95B3-E5DFA92A9461}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LikeMe", "LikeMe\LikeMe.csproj", "{F3053E28-A4F1-4641-9377-863F59507ED6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{75623A86-BC0F-4734-95B3-E5DFA92A9461}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75623A86-BC0F-4734-95B3-E5DFA92A9461}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75623A86-BC0F-4734-95B3-E5DFA92A9461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3053E28-A4F1-4641-9377-863F59507ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3053E28-A4F1-4641-9377-863F59507ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3053E28-A4F1-4641-9377-863F59507ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3053E28-A4F1-4641-9377-863F59507ED6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
