@@ -1,0 +1,63 @@
+{
+
+	"contract": {
+		"params": "0710",
+
+    "inputs": [
+
+      {
+        "name": "Set initial rating for User 1",
+        "params": [
+          "setInitial",
+          [ "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8" ]
+        ]
+      },
+      {
+        "name": "Set initial rating for User 2",
+        "params": [
+          "setInitial",
+          [ "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA" ]
+        ]
+      },
+      {
+        "name": "Rate of user 1",
+        "params": [
+          "rateOf",
+          [ "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8" ]
+        ]
+      },
+      {
+        "name": "Rate of user 2",
+        "params": [
+          "rateOf",
+          [ "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA" ]
+        ]
+      },
+      {
+        "name": "User 1 likes user 2",
+        "params": [
+          "like",
+          [ "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8", "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA", "4" ]
+        ]
+      },
+      {
+        "name": "User 2 likes user 1",
+        "params": [
+          "like",
+          [ "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA", "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8", "3" ]
+        ]
+      },
+      {
+        "name": "User 2 dislikes user 1",
+        "params": [
+          "dislike",
+          [ "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA", "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8", "1" ]
+        ]
+      },
+      {
+        "name": "Write version to the storage",
+        "params": [ "version", null ]
+      }
+    ]
+	}
+}
