@@ -1,0 +1,69 @@
+{
+
+	"contract": {
+		"params": "0710",
+
+    "inputs": [
+      {
+        "name": "Deploy",
+        "params": [ "deploy", null ]
+      },
+      {
+        "name": "Set Contribution Value",
+        "params": [
+          "setContributionValue",
+          [ "0.018598" ]
+        ]
+      },
+      {
+        "name": "Delete Contribution Value",
+        "params": [
+          "setContributionValue",
+          [ "0" ]
+        ]
+      },
+      {
+        "name": "Set Attandance Factor",
+        "params": [
+          "setAttandanceFactor",
+          [ "15" ]
+        ]
+      },
+      {
+        "name": "Get Total Supply",
+        "params": [
+          "totalSupply",
+          null
+        ]
+      },
+      {
+        "name": "Get Balance of A",
+        "params": [
+          "balanceOf",
+          [ "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8" ]
+        ]
+      },
+      {
+        "name": "Get Balance of B",
+        "params": [
+          "balanceOf",
+          [ "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA" ]
+        ]
+      },
+      {
+        "name": "Register A",
+        "params": [
+          "register",
+          [ "AUmhj5vq4HYwHRR2JygEoinKYhSy3yjnq8" ]
+        ]
+      },
+      {
+        "name": "Register B",
+        "params": [
+          "register",
+          [ "AbEP45fcoxZQwq8ofQAQaGrifTBdX9j3aA" ]
+        ]
+      }
+    ]
+	}
+}

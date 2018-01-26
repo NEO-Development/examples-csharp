@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripShare", "TripShare\Trip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Attandance", "Attandance\Attandance.csproj", "{AC38D292-5E05-439A-81A6-77FDB963051D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeoContract1", "NeoContract1\NeoContract1.csproj", "{F47DC0A3-0B4B-40CF-8914-AC3DDFA65EFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IcoShare", "IcoShare\IcoShare.csproj", "{D04565BB-0B72-4028-BCFC-6CD238C98C14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{AC38D292-5E05-439A-81A6-77FDB963051D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC38D292-5E05-439A-81A6-77FDB963051D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC38D292-5E05-439A-81A6-77FDB963051D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47DC0A3-0B4B-40CF-8914-AC3DDFA65EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47DC0A3-0B4B-40CF-8914-AC3DDFA65EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47DC0A3-0B4B-40CF-8914-AC3DDFA65EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47DC0A3-0B4B-40CF-8914-AC3DDFA65EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D04565BB-0B72-4028-BCFC-6CD238C98C14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D04565BB-0B72-4028-BCFC-6CD238C98C14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D04565BB-0B72-4028-BCFC-6CD238C98C14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D04565BB-0B72-4028-BCFC-6CD238C98C14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
